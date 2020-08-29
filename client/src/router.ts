@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import Home from './views/Home.vue'
 import Login from './views/Login.vue'
 import Register from './views/Register.vue'
+import ValidacaoEmail from './views/ValidacaoEmail.vue'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes: RouteConfig[] = [
 		path: '/entrar',
 		name: 'Login',
 		component: Login
+	},
+	{
+		path: '/validacaoEmail',
+		name: 'Validação de Email Teste',
+		component: ValidacaoEmail
 	},
 	{
 		path: '/cadastrar',
